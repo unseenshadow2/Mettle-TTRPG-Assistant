@@ -1,0 +1,10 @@
+{
+    "name": "phpmyadmin/phpmyadmin",
+    "version": "4.7.1",
+    "dist":
+    {
+        "url": "https://files.phpmyadmin.net/phpMyAdmin/4.7.1/phpMyAdmin-4.7.1-all-languages.zip",
+        "checksum": "278b8131a63e242f9ee462e2b6aca8b9eb5535a5",
+        "type": "zip"
+    }
+}
