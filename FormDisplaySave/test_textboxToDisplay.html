@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Text to HTML Test Page</title>
+	
+	<!-- Our script location -->
+	<script src="scripts/journal.js"></script>
+</head>
+
+<body>
+	<h1>Textbox to HTML Display</h1>
+	<p id="display" style="background-color: lightblue; width: 15%; max-width: 50%;">
+		HTML will appear here.
+	</p> <!-- The display area -->
+
+	<p id="capture_zone" style="background-color: yellow; width: 15%; max-width: 50%;">
+	</p> <!-- The captured data display area -->
+	
+	<!-- The entry point for our data to be displayed -->
+	<textarea id="message" rows="10" cols="30" >
+		Input HTML here.
+	</textarea><br>
+
+	<!-- The button that handles changing the display area -->
+	<button onclick="displayText('message','display')">Display</button><br><br>
+	<button onclick="displayString('capture_zone', updateInnerHTML('display'))">Capture Input</button><br>
+	<!--<button onclick="checkHTML()">Check InnerHTML</button>-->
+</body>
+</html>
