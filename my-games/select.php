@@ -23,11 +23,7 @@
             </form>
         </div>
         <?php
-		$hostname="";
-		$username="";
-		$password="";
-		$dbname="";
-		$usertable="";
+
 
 		mysql_connect("$hostname","$username", "$password") or die ("<html><script language='JavaScript'>alert('Unable to connect to database! Please email contact@wulf.design'),history.go(-1)</script></html>");
 		mysql_select_db("$dbname");
