@@ -23,7 +23,11 @@
             </form>
         </div>
         <?php
-
+		$hostname="";
+		$username="";
+		$password="";
+		$dbname="";
+		$usertable="games";
 
 		mysql_connect("$hostname","$username", "$password") or die ("<html><script language='JavaScript'>alert('Unable to connect to database! Please email contact@wulf.design'),history.go(-1)</script></html>");
 		mysql_select_db("$dbname");
@@ -34,10 +38,11 @@
         while($row = mysql_fetch_array($rs))
         {
             echo "<div class='form_Area'>
-            		<p>" . $row['gameName'] . "</p>
-                    <p> GameID: " . $row['gameNumber'] . "</p>
-                    <p>" . $row['userName'] . "</p>
-                  </div>";
+            		<p class='gameTitle'>" . $row['gameName'] . "</p>
+                    <p class='gameID'> GameID: " . $row['gameNumber'] . "</p>
+                    <p class='gameUsers'>" . $row['userName'] . "</p>
+                  </div>
+";
         }
 		?>
     </body>
