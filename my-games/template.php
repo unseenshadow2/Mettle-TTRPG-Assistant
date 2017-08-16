@@ -16,7 +16,7 @@
 			<div id="journalDiv">
 				<!-- Load the HTML templates into this object -->
 			</div>
-			<button script="updateInnerHTML('journalDiv')/*This spits out the string that is the journalDiv's html contents with updated values. We need to work on getting this to interact with the database*/">Save</button>
+			<button onclick="updateInnerHTML('journalDiv')/*This spits out the string that is the journalDiv's html contents with updated values. We need to work on getting this to interact with the database*/">Save</button>
 		</div>
     </body>
 </html>
