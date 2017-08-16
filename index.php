@@ -5,10 +5,12 @@
         <title>Mettle</title>
     </head>
     <body>
+        <!-- Title and Subtitle Images -->
         <div class="img_Space">
             <img class="page_Title" src="/img/Mettlewhite.png">
             <img class="page_Title" src="/img/RPGwhite.png">
         </div>
+        <!-- Login Form -->
         <div class="form_Area">
             <form name="login" method="post" action="/form/login.php">
             	<p>
@@ -18,10 +20,11 @@
             	<p>
                 	PASSWORD
                 </p>
-                <input type="text" name="pass_word" >
+                <input type="text" name="pass_word" > 
         	</form>
         	<div class="form_Submit button1" onclick="document.forms['login'].submit();">Login</div>
         </div>
+        <!-- Create Form -->
         <div class="form_Area">
             <form name="create" method="post" action="/form/create.php">
             	<p>

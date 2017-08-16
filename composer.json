@@ -1,3 +1,4 @@
+//Sourcerlair linking for phpmyadmin
 {
     "name": "phpmyadmin/phpmyadmin",
     "version": "4.7.1",
